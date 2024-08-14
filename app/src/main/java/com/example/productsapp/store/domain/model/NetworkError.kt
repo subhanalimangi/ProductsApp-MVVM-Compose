@@ -1,7 +1,7 @@
 package com.example.productsapp.store.domain.model
 
 data class NetworkError(
-    val error: String,
+    val error: ApiError,
     val t : Throwable? = null,
 )
 enum class ApiError (val message: String){
